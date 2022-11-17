@@ -70,13 +70,13 @@ function NossasShop() {
 
         <div className="nossas__card nossas__card-bg">
           <div className="nossas__card-img">
-            <img src="/img/nossas/card2.jpg" alt="" />
+            <img src="img/nossas/card2.jpg" alt="" />
             <h2 className="nossas__card-img_price">R$ 2.499</h2>
           </div>
           <div className="nossas__card-info">
             <img
               className="nossas__deco"
-              src="/img/nossas/decoration/decoEl.svg"
+              src="img/nossas/decoration/decoEl.svg"
               alt=""
             />
             <h2 className="nossas__card-title">Magic Migth</h2>
@@ -90,7 +90,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item1.svg"
+                    src="img/nossas/decoration/item1.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">Motor Elétrico</h2>
@@ -98,7 +98,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item2.svg"
+                    src="img/nossas/decoration/item2.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">Fibra de Carbono</h2>
@@ -106,7 +106,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item3.svg"
+                    src="img/nossas/decoration/item3.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">40km/h</h2>
@@ -114,7 +114,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item4.svg"
+                    src="img/nossas/decoration/item4.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">Rastreador</h2>
@@ -133,13 +133,13 @@ function NossasShop() {
         </div>
         <div className="nossas__card">
           <div className="nossas__card-img">
-            <img src="/img/nossas/card3.jpg" alt="" />
+            <img src="img/nossas/card3.jpg" alt="" />
             <h2 className="nossas__card-img_price">R$ 3.999</h2>
           </div>
           <div className="nossas__card-info">
             <img
               className="nossas__deco"
-              src="/img/nossas/decoration/decoEl.svg"
+              src="img/nossas/decoration/decoEl.svg"
               alt=""
             />
             <h2 className="nossas__card-title">Mebula Cosmic</h2>
@@ -153,7 +153,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item1.svg"
+                    src="img/nossas/decoration/item1.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">Motor Elétrico</h2>
@@ -161,7 +161,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item2.svg"
+                    src="img/nossas/decoration/item2.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">Fibra de Carbono</h2>
@@ -169,7 +169,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item3.svg"
+                    src="img/nossas/decoration/item3.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">40km/h</h2>
@@ -177,7 +177,7 @@ function NossasShop() {
                 <div className="nossas__character-container">
                   <img
                     className="nossas__character-img"
-                    src="/img/nossas/decoration/item4.svg"
+                    src="img/nossas/decoration/item4.svg"
                     alt=""
                   />
                   <h2 className="nossas__character-title">Rastreador</h2>
