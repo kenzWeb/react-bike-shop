@@ -49,7 +49,7 @@ function Cores() {
         <div className="cores__right">
           <img
             className="cores__right-img"
-            src="/img/cores/cores-right.jpg"
+            src="img/cores/cores-right.jpg"
             alt=""
           />
         </div>

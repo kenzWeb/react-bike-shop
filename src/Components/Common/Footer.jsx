@@ -19,13 +19,13 @@ function Footer() {
           </div>
           <div className="footer__second-socials">
             <a href="http://localhost:3000/">
-              <img src="/img/footer/instagram.svg" alt="" />
+              <img src="img/footer/instagram.svg" alt="" />
             </a>
             <a href="http://localhost:3000/">
-              <img src="/img/footer/facebook.svg" alt="" />
+              <img src="img/footer/facebook.svg" alt="" />
             </a>
             <a href="http://localhost:3000/">
-              <img src="/img/footer/youtube.svg" alt="" />
+              <img src="img/footer/youtube.svg" alt="" />
             </a>
           </div>
         </div>

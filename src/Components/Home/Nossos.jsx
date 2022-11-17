@@ -12,21 +12,21 @@ function Nossos() {
         <div className="nossos__items">
           <div className="nossos__first">
             <div className="nossos__content">
-              <img src="/img/nossos/ranek.svg" alt="" className="nossos__img" />
+              <img src="img/nossos/ranek.svg" alt="" className="nossos__img" />
             </div>
             <div className="nossos__content">
               <img
-                src="/img/nossos/caravan.svg"
+                src="img/nossos/caravan.svg"
                 alt=""
                 className="nossos__img"
               />
             </div>
             <div className="nossos__content">
-              <img src="/img/nossos/dogs.svg" alt="" className="nossos__img" />
+              <img src="img/nossos/dogs.svg" alt="" className="nossos__img" />
             </div>
             <div className="nossos__content">
               <img
-                src="/img/nossos/handel.svg"
+                src="img/nossos/handel.svg"
                 alt=""
                 className="nossos__img"
               />
@@ -35,28 +35,28 @@ function Nossos() {
           <div className="nossos__second">
             <div className="nossos__content">
               <img
-                src="/img/nossos/surfbot.svg"
+                src="img/nossos/surfbot.svg"
                 alt=""
                 className="nossos__img"
               />
             </div>
             <div className="nossos__content">
               <img
-                src="/img/nossos/wildbeast.svg"
+                src="img/nossos/wildbeast.svg"
                 alt=""
                 className="nossos__img"
               />
             </div>
             <div className="nossos__content">
               <img
-                src="/img/nossos/flexblog.svg"
+                src="img/nossos/flexblog.svg"
                 alt=""
                 className="nossos__img"
               />
             </div>
             <div className="nossos__content">
               <img
-                src="/img/nossos/lescone.svg"
+                src="img/nossos/lescone.svg"
                 alt=""
                 className="nossos__img"
               />

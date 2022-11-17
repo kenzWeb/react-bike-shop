@@ -75,7 +75,7 @@ function Accordion() {
             >
               <div className="decoration__card-head">
                 <img
-                  src="/img/nossas/decoEl.svg"
+                  src="img/nossas/decoEl.svg"
                   alt=""
                   className="accordion__title-deco"
                 />
@@ -95,7 +95,7 @@ function Accordion() {
                 {el.answer}
               </p>
               <img
-                src="/img/accordion/btn.svg"
+                src="img/accordion/btn.svg"
                 alt=""
                 className={`accordion__img ${
                   accordion === index ? "_active" : ""
