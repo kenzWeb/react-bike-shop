@@ -1,0 +1,70 @@
+.accordion {
+	margin-top: 120px;
+	margin-bottom: 120px;
+	background-color: #fff;
+}
+
+.bgg {
+	background: #F7F7F6;
+}
+
+
+.accordion__header {
+	margin-bottom: clamp(2.875rem, 1.804rem + 5.36vw, 5.688rem);
+}
+
+.accordion__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.accordion__card {
+	cursor: pointer;
+	padding: 20px;
+	position: relative;
+}
+
+.decoration__card-head {
+	display: flex;
+}
+
+.accordion__title {
+	font-weight: 600;
+	font-size: clamp(0.75rem, 0.607rem + 0.71vw, 1.125rem);
+	line-height: clamp(1rem, 0.81rem + 0.95vw, 1.5rem);
+	color: $accentColor;
+
+	&._active {
+		margin-bottom: 16px;
+	}
+}
+
+.accordion__title-deco {
+	margin-right: 8px;
+}
+
+.accordion__subtitle {
+	max-width: 780px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #404040;
+	display: none;
+
+	&._active {
+		display: block;
+	}
+}
+
+.accordion__img {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	cursor: pointer;
+	transition: all 0.1s linear;
+
+	&._active {
+		transform: rotate(180deg);
+	}
+}

@@ -1,0 +1,232 @@
+.nossas {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 120px;
+	background-color: $accentColor;
+}
+
+.nossos__subtitle {
+	color: $gray;
+	font-weight: 500;
+	font-size: clamp(0.75rem, 0.464rem + 1.43vw, 1.5rem);
+	line-height: 23px;
+}
+
+.nossos__title {
+	font-weight: 600;
+	font-size: clamp(2rem, 1.238rem + 3.81vw, 4rem);
+	line-height: clamp(2.25rem, 1.393rem + 4.29vw, 4.5rem);
+	color: #FFFFFF;
+}
+
+.nossas__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.nossas__card {
+	display: flex;
+	margin-bottom: 120px;
+}
+
+.nossas__card-bg {
+	position: relative;
+}
+
+.nossas__wrapper {
+}
+
+.nossas__card-bg:after {
+	content: '';
+	z-index: -3;
+	position: absolute;
+	bottom: -10%;
+	left: 15%;
+	display: block;
+	width: 114.62%;
+	min-height: 120%;
+	background-color: $accentColor;
+}
+
+.nossas__card-wrapper {
+	background-color: $accentColor;
+}
+
+.nossas__card-img {
+	position: relative;
+	margin-right: 40px;
+}
+
+.nossas__card-img_price {
+	position: absolute;
+	padding: 8px 16px 8px 16px;
+	top: 20px;
+	right: -0px;
+	display: inline-block;
+	color: white;
+	background: #000000;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.nossas__card-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.nossas__deco {
+	width: 12px;
+	height: 8px;
+	margin-bottom: 8px;
+}
+
+.nossas__card-title {
+	font-weight: 600;
+	font-size: clamp(1.25rem, 0.869rem + 1.9vw, 2.25rem);
+	line-height: 40px;
+	color: $accentColor;
+	margin-bottom: 20px;
+}
+
+.nossas__card-subtitle {
+	max-width: 460px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: clamp(0.75rem, 0.607rem + 0.71vw, 1.125rem);
+	line-height: 24px;
+	color: #595959;
+}
+
+.nossas__card-character {
+	display: flex;
+	margin-top: 16px;
+}
+
+.nossas__character-container {
+	display: flex;
+	white-space: nowrap;
+
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+.nossas__character-img {
+	margin-right: 10px;
+}
+
+.nossas__character-title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: clamp(0.75rem, 0.607rem + 0.71vw, 1.125rem);
+	line-height: 24px;
+	color: #595959;
+}
+
+.nossas__character-btn {
+	padding: 16px 32px 16px 32px;
+	background: linear-gradient(180deg, #FFBB00 0%, #F2A60C 100%);
+	border-radius: 5px;
+	margin-left: 11px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #332200;
+}
+
+.nossas__button {
+	border-radius: 5px;
+	padding: 16px 23px 16px 32px;
+	background: linear-gradient(180deg, #FFBB00 0%, #F2A60C 100%);
+	display: flex;
+}
+
+.nossas__button-link {
+	font-weight: 600;
+	white-space: nowrap;
+	font-size: clamp(0.375rem, 0.089rem + 1.43vw, 1.125rem);
+	text-transform: uppercase;
+	color: #332200;
+	border-radius: 5px;
+	padding: 16px 23px 16px 32px;
+	background: linear-gradient(180deg, #FFBB00 0%, #F2A60C 100%);
+	display: flex;
+
+	&::after {
+		content: url(../../../public/img/nossas/decoration/arrow.svg);
+		position: relative;
+		right: -15px;
+	}
+}
+
+.nossas__button-wrapper {
+	cursor: pointer;
+	margin-top: clamp(2rem, 0.143rem + 9.29vw, 6.875rem);
+	margin-left: clamp(4.688rem, 3.735rem + 4.76vw, 7.188rem);
+}
+
+@media (max-width: 970px) {
+	.nossas__character-btn {
+		padding-right: 48px;
+	}
+
+	.nossas__card {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 60px;
+	}
+
+	.nossas__card-img {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.nossas__card-character {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nossas__button-link {
+		font-size: 18px;
+	}
+
+	.nossas__card-title {
+		position: relative;
+		text-align: center;
+	}
+
+	.nossas__card-subtitle {
+		text-align: center;
+	}
+
+	.nossas__button-wrapper {
+		margin-left: 0;
+	}
+
+	.nossas__card-bg:after {
+		content: '';
+		z-index: -3;
+		position: absolute;
+		bottom: -10%;
+		left: 15%;
+		display: block;
+		width: 0;
+		height: 120%;
+		background-color: $accentColor;
+	}
+}
+
+@media (max-width: 1400px) {
+	.nossas__card-bg:after {
+		content: '';
+		z-index: -3;
+		position: absolute;
+		bottom: -10%;
+		left: 15%;
+		display: none;
+		max-width: 95%;
+		min-height: 120%;
+		background-color: $accentColor;
+	}
+}

@@ -1,0 +1,50 @@
+@import './fonts';
+@import './vars';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 18px;
+	position: relative;
+
+	&._active {
+		overflow: hidden;
+	}
+}
+
+[class*="__container"] {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title {
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 72px;
+	text-transform: lowercase;
+	margin-bottom: 8px;
+	color: #121212;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+	color: $gray;
+}
+
+.title span {
+	color: $secondColor;
+}
+
+.m {
+	background-color: #fff;
+}

@@ -1,0 +1,53 @@
+.vanta {
+	padding: clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem) 0 clamp(3.75rem, 2.386rem + 6.82vw, 7.5rem) 0;
+	background-color: black;
+}
+
+.vanta__container {
+	color: white;
+}
+
+.vanta__header {
+	margin-bottom: 40px;
+
+	& h2 {
+		font-weight: 600;
+		font-size: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+		line-height: clamp(2rem, 1.091rem + 4.55vw, 4.5rem);
+		color: #FFFFFF;
+	}
+}
+
+.vanta__content {
+	grid-gap: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vanta__card {
+	align-items: center;
+}
+
+.vanta__img {
+	margin-bottom: 8px;
+}
+
+.vanta__title {
+	font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+	margin-bottom: 8px;
+}
+
+.vanta__subtitle {
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-size: clamp(0.625rem, 0.443rem + 0.91vw, 1.125rem);
+	line-height: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+	color: #9C9C9C;
+}
+
+@media (max-width: 425px) {
+	.vanta__content {
+		align-items: center;
+		grid-template-columns: 1fr 1fr;
+	}
+}

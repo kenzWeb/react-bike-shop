@@ -1,0 +1,242 @@
+.seguros {
+	padding-top: 60px;
+	padding-bottom: 120px;
+	color: white;
+	background: $accentColor;
+}
+
+.seguros__header {
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.seguros__header-title {
+	color: white;
+}
+
+.seguros__content {
+	display: flex;
+	align-items: center;
+}
+
+.seguros__left {
+	margin-right: 40px;
+}
+
+.seguros__left-card {
+	padding: 20px 32px 45px 60px;
+	background-color: black;
+	display: flex;
+	border-radius: 5px;
+	flex-direction: column;
+}
+
+.seguros__left-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.seguros__left-title {
+	font-weight: 600;
+	margin-right: 370px;
+	font-size: 36px;
+	line-height: 48px;
+	color: #9C9C9C;
+}
+
+.seguros__left-price {
+	font-weight: 600;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+
+.seguros__left-content {
+	flex-direction: column;
+}
+
+.seguros__link {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FFFFFF;
+	position: relative;
+}
+
+.seguros__link::before {
+	content: url('../../../public/img/seguros/arrow.svg');
+	position: absolute;
+	left: -4%;
+}
+
+.seguros__link:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.seguros__left-button {
+	background: $accentColor;
+	color: #CCCCCC;
+	transition: 500ms all ease-in-out;
+}
+
+.seguros__left-button:hover {
+	background-color: $secondColor;
+	color: #332200;
+}
+
+.seguros__button {
+	border-radius: 5px;
+	padding: 16px 32px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+
+.seguros__right-card {
+	padding: 20px 40px 45px 60px;
+	background-color: black;
+	display: flex;
+	border-radius: 5px;
+	flex-direction: column;
+}
+
+.seguros__right-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.seguros__right-title {
+	font-weight: 600;
+	color: $secondColor;
+	margin-right: 370px;
+	font-size: 36px;
+}
+
+.seguros__right-price {
+	font-weight: 600;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+
+.seguros__right-button {
+	background-color: $secondColor;
+	color: #332200;
+	transition: 500ms all ease-in-out;
+}
+
+.seguros__right-button:hover {
+	color: #CCCCCC;
+	background-color: $accentColor;
+}
+
+@media (max-width: 1400px) {
+	.seguros__left-title {
+		margin-right: 300px;
+	}
+
+	.seguros__right-title {
+		margin-right: 300px;
+	}
+
+	.seguros__link::before {
+		content: url('../../../public/img/seguros/arrow.svg');
+		position: absolute;
+		left: -7%;
+	}
+}
+
+@media (max-width: 1220px) {
+	.seguros__left-title {
+		margin-right: 240px;
+		line-height: normal;
+	}
+
+	.seguros__right-title {
+		margin-right: 240px;
+		line-height: normal;
+	}
+
+}
+
+@media (max-width: 1070px) {
+	.seguros__left-title {
+		margin-right: 200px;
+		font-size: 26px;
+	}
+
+	.seguros__left-price {
+		font-size: 26px;
+	}
+
+	.seguros__left-header {
+		margin-bottom: 20px;
+	}
+
+	.seguros__right-title {
+		margin-right: 200px;
+		font-size: 26px;
+	}
+
+	.seguros__right-price {
+		font-size: 26px;
+	}
+
+	.seguros__right-header {
+		margin-bottom: 20px;
+	}
+
+	.seguros__link {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 920px) {
+	.seguros__content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seguros__left {
+		margin-right: 0;
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 500px) {
+	.seguros__content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seguros__left {
+		margin-right: 0;
+		margin-bottom: 35px;
+	}
+
+	.seguros__left-title {
+		margin-right: 120px;
+	}
+
+	.seguros__right-title {
+		margin-right: 120px;
+	}
+
+	.seguros__left-price {
+		font-size: 20px;
+	}
+
+	.seguros__right-price {
+		font-size: 20px;
+	}
+
+	.seguros__left-card {
+		padding: 20px 25px 45px 60px;
+	}
+
+	.seguros__right-card {
+		padding: 20px 30px 45px 60px;
+	}
+}
