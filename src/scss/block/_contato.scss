@@ -1,0 +1,172 @@
+.contato {
+	padding-top: 60px;
+	background-color: $accentColor;
+}
+
+.contato__header {
+	position: relative;
+	margin-bottom: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+	padding-bottom: 400px;
+}
+
+.contato__title {
+	color: white;
+}
+
+.contato__card {
+	top: 50%;
+	position: absolute;
+	display: flex;
+}
+
+.contato__left {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: black;
+	border-radius: 5px 0px 0px 5px;
+	padding: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem) clamp(5rem, 2.455rem + 12.73vw, 12rem) clamp(4.75rem, 3.068rem + 8.41vw, 9.375rem) clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+}
+
+.contato__left-title {
+	margin-bottom: 40px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.contato__left-card {
+	margin-bottom: 40px;
+}
+
+.contato__contacts {
+	align-items: flex-start;
+	display: flex;
+}
+
+.contato__left-img {
+	margin-right: 9px;
+}
+
+.contato__left-subtitle {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 180px;
+	margin-bottom: 30px;
+}
+
+.contato__left-socials {
+	margin-left: 30px;
+	display: flex;
+}
+
+.contato__social-item {
+	margin-right: 32px;
+}
+
+.contato__right {
+	padding-top: 60px;
+	padding-left: 60px;
+	padding-bottom: 60px;
+	background-color: #fff;
+	box-shadow: 6px 1px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 0 5px 5px 0;
+}
+
+.contato__right-form_basic {
+	display: flex;
+	margin-bottom: 20px;
+
+	& {
+		gap: 20px;
+	}
+}
+
+.contato__form-group {
+	display: flex;
+	flex-direction: column;
+
+	&:not(:first-child) {
+		margin-right: 100px;
+	}
+}
+
+.contato__form-input {
+	margin-top: 5px;
+	background: #F7F7F7;
+	border: 1px solid #EDEDED;
+	padding: 12px 100px 12px 12px;
+
+	&::placeholder {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #707070;
+		transition: all 0.5s ease;
+	}
+}
+
+
+
+.contato__form-input_big {
+	padding-bottom: 124px;
+}
+
+.contato__form-label_big {
+	margin-top: 32px;
+}
+
+.form__basic {}
+
+.contato__from-btn {
+	margin-top: 20px;
+}
+
+@media (max-width: 1300px) {
+	.contato__form-input {
+		margin-top: 5px;
+		background: #F7F7F7;
+		border: 1px solid #EDEDED;
+		padding: 12px 20px 12px 12px;
+	}
+
+	.contato__form-group {
+		&:not(:first-child) {
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.contato__card {
+		right: 0;
+		left: 0;
+		flex-direction: column;
+	}
+
+	.contato__left {
+		align-items: center;
+		padding: 0;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 540px) {
+	.contato__right-form_basic {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	.basic__form-input {
+		width: 100%;
+	}
+
+	.contato__form-group {
+		margin-right: 20px;
+	}
+}
