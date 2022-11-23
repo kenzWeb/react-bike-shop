@@ -15,7 +15,7 @@ export default function Home(props) {
           <button className="escolh__button">Selecione a sua</button>
         </div>
         <div className="escolh__right">
-					<img className="escolh__img" src='img/escolh/img-intro.jpg' alt="" />
+          <img className="escolh__img" src="img/escolh/img-intro.jpg" alt="" />
         </div>
       </div>
     </section>

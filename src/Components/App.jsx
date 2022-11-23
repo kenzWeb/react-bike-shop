@@ -3,7 +3,7 @@ import ContatoP from "./Pages/ContatoP";
 import HomeP from "./Pages/HomeP";
 import SegurosP from "./Pages/SegurosP";
 
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App(props) {
   return (

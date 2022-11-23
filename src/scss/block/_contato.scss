@@ -4,9 +4,8 @@
 }
 
 .contato__header {
-	position: relative;
-	margin-bottom: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
 	padding-bottom: 400px;
+	margin-bottom: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
 }
 
 .contato__title {
@@ -14,8 +13,8 @@
 }
 
 .contato__card {
-	top: 50%;
-	position: absolute;
+	margin-bottom: 120px;
+	margin-top: -400px;
 	display: flex;
 }
 
@@ -119,8 +118,6 @@
 	margin-top: 32px;
 }
 
-.form__basic {}
-
 .contato__from-btn {
 	margin-top: 20px;
 }
@@ -168,5 +165,10 @@
 
 	.contato__form-group {
 		margin-right: 21px;
+	}
+
+	.contato__right {
+		align-items: center;
+		padding-left: 0;
 	}
 }

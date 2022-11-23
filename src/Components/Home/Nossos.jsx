@@ -25,11 +25,7 @@ function Nossos() {
               <img src="img/nossos/dogs.svg" alt="" className="nossos__img" />
             </div>
             <div className="nossos__content">
-              <img
-                src="img/nossos/handel.svg"
-                alt=""
-                className="nossos__img"
-              />
+              <img src="img/nossos/handel.svg" alt="" className="nossos__img" />
             </div>
           </div>
           <div className="nossos__second">

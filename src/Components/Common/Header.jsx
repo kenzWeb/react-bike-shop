@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Header(props) {
-	const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
   return (
     <CustomHeader className="header">
@@ -57,6 +57,5 @@ function CustomHeader({ children, ...props }) {
     <header className={`header ${isActive ? "active" : ""}`}>{children}</header>
   );
 }
-
 
 export default Header;
