@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Footer() {
   return (
@@ -31,26 +32,42 @@ function Footer() {
         </div>
         <div className="footer__column-third">
           <h2 className="footer__third-title">INFORMAÇÕES</h2>
-          <div className="footer__third-links">
-            <a className="footer__third-link" href="http://localhost:3000/">
+          <ul className="footer__third-links">
+            <CustomLink
+              to="/bicicletas"
+              className="footer__third-link"
+              href="http://localhost:3000/"
+            >
               Bicicletas
-            </a>
-            <a className="footer__third-link" href="http://localhost:3000/">
+            </CustomLink>
+            <CustomLink to="/seguros" className="footer__third-link">
               Seguros
-            </a>
-            <a className="footer__third-link" href="http://localhost:3000/">
+            </CustomLink>
+            <CustomLink to="/contato" className="footer__third-link">
               Contato
-            </a>
-            <a className="footer__third-link" href="http://localhost:3000/">
+            </CustomLink>
+            <CustomLink to="/condicoes" className="footer__third-link">
               Termos e Condições
-            </a>
-          </div>
+            </CustomLink>
+          </ul>
         </div>
       </div>
       <h2 className="footer__license">
         Bikcraft © Alguns rireitos reservados.
       </h2>
     </footer>
+  );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvePath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvePath.pathname, end: true });
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
   );
 }
 

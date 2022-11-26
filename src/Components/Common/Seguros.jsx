@@ -1,10 +1,29 @@
 import React from "react";
 import { useMatch, useResolvedPath } from "react-router-dom";
+import { motion } from "framer-motion";
 import SegurosP from "../Pages/SegurosP";
+
+const CardAnimation = {
+  to: {
+    opacity: 0,
+    x: 1000,
+  },
+  from: (custom) => ({
+    opacity: 1,
+    x: 0,
+    transition: { delay: custom * 0.2, duration: 0.8 },
+  }),
+};
 
 function Seguros() {
   return (
-    <section className="seguros">
+    <motion.section
+      className="seguros"
+      initial="to"
+      whileInView="from"
+      viewport={{ amount: 0.2, once: true }}
+			style={{overflow: 'hidden'}}
+    >
       <div className="seguros__container">
         <div className="seguros__header">
           <h2 className="seguros__header-title title">
@@ -13,7 +32,11 @@ function Seguros() {
         </div>
         <div className="seguros__content">
           <div className="seguros__left">
-            <div className="seguros__left-card">
+            <motion.div
+              className="seguros__left-card"
+              variants={CardAnimation}
+              custom={1}
+            >
               <div className="seguros__left-header">
                 <h2 className="seguros__left-title">PRATA</h2>
                 <p className="seguros__left-price">R$ 199</p>
@@ -35,10 +58,14 @@ function Seguros() {
                   INSCREVA-SE
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="seguros__right">
-            <div className="seguros__right-card">
+            <motion.div
+              className="seguros__right-card"
+              variants={CardAnimation}
+              custom={2}
+            >
               <div className="seguros__right-header">
                 <h2 className="seguros__right-title">OURO</h2>
                 <p className="seguros__right-price">R$ 199</p>
@@ -67,11 +94,11 @@ function Seguros() {
                   INSCREVA-SE
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

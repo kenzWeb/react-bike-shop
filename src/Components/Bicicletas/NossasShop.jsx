@@ -1,10 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function NossasShop() {
   return (
     <div className="nossasShop__container">
-      <div className="nossas__content">
-        <div className="nossas__card">
+      <motion.div className="nossas__content">
+        <motion.div
+          className="nossas__card"
+          viewport={{ amount: 0.2, once: true }}
+          initial={{ x: 2000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
           <div className="nossas__card-img">
             <img src="img/nossas/card1.jpg" alt="" />
             <h2 className="nossas__card-img_price">R$ 4.999</h2>
@@ -66,9 +73,15 @@ function NossasShop() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="nossas__card nossas__card-bg">
+        <motion.div
+          className="nossas__card nossas__card-bg"
+          viewport={{ amount: 0.2, once: true }}
+          initial={{ x: 2000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1 }}
+        >
           <div className="nossas__card-img">
             <img src="img/nossas/card2.jpg" alt="" />
             <h2 className="nossas__card-img_price">R$ 2.499</h2>
@@ -130,8 +143,15 @@ function NossasShop() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="nossas__card">
+        </motion.div>
+
+        <motion.div
+          className="nossas__card"
+          viewport={{ amount: 0.2, once: true }}
+          initial={{ x: 2000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.5 }}
+        >
           <div className="nossas__card-img">
             <img src="img/nossas/card3.jpg" alt="" />
             <h2 className="nossas__card-img_price">R$ 3.999</h2>
@@ -193,8 +213,8 @@ function NossasShop() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
