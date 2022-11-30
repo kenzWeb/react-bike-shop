@@ -8,9 +8,9 @@ function NossasShop() {
         <motion.div
           className="nossas__card"
           viewport={{ amount: 0.2, once: true }}
-          initial={{ x: 2000, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6,}}
         >
           <div className="nossas__card-img">
             <img src="img/nossas/card1.jpg" alt="" />
@@ -78,9 +78,9 @@ function NossasShop() {
         <motion.div
           className="nossas__card nossas__card-bg"
           viewport={{ amount: 0.2, once: true }}
-          initial={{ x: 2000, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
         >
           <div className="nossas__card-img">
             <img src="img/nossas/card2.jpg" alt="" />
@@ -148,9 +148,9 @@ function NossasShop() {
         <motion.div
           className="nossas__card"
           viewport={{ amount: 0.2, once: true }}
-          initial={{ x: 2000, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.5 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
         >
           <div className="nossas__card-img">
             <img src="img/nossas/card3.jpg" alt="" />

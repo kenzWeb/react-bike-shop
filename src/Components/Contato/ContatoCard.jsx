@@ -20,7 +20,7 @@ function ContatoCard() {
           className="contato__card"
           initial={{ x: -2000 }}
           animate={{ x: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6}}
         >
           <motion.div className="contato__left">
             <motion.h2

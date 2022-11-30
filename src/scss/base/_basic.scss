@@ -28,7 +28,7 @@ body {
 	font-family: 'Poppins';
 	font-weight: 600;
 	font-size: 64px;
-	line-height: 72px;
+	line-height: clamp(2.25rem, 1.393rem + 4.29vw, 4.5rem);
 	text-transform: lowercase;
 	margin-bottom: 8px;
 	color: #121212;

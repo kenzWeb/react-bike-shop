@@ -1,8 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const CardAnimation = {
+  to: {
+    opacity: 0,
+    x: -1000,
+  },
+  from: (custom) => ({
+    opacity: 1,
+    x: 0,
+    transition: { delay: custom * 0.2, duration: 0.5 },
+  }),
+};
 
 function Nossos() {
   return (
-    <section className="nossos">
+    <motion.section
+      className="nossos"
+      initial="to"
+      whileInView="from"
+      viewport={{ amount: 0.1, once: true }}
+			style={{overflow: 'hiden'}}
+    >
       <div className="nosso__container">
         <div className="nossos__head">
           <h2 className="title">
@@ -10,7 +29,11 @@ function Nossos() {
           </h2>
         </div>
         <div className="nossos__items">
-          <div className="nossos__first">
+          <motion.div
+            className="nossos__first"
+            variants={CardAnimation}
+            custom={1}
+          >
             <div className="nossos__content">
               <img src="img/nossos/ranek.svg" alt="" className="nossos__img" />
             </div>
@@ -27,8 +50,12 @@ function Nossos() {
             <div className="nossos__content">
               <img src="img/nossos/handel.svg" alt="" className="nossos__img" />
             </div>
-          </div>
-          <div className="nossos__second">
+          </motion.div>
+          <motion.div
+            className="nossos__second"
+            variants={CardAnimation}
+            custom={3}
+          >
             <div className="nossos__content">
               <img
                 src="img/nossos/surfbot.svg"
@@ -57,10 +84,10 @@ function Nossos() {
                 className="nossos__img"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
