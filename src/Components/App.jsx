@@ -1,10 +1,12 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import BicicletasP from "./Pages/BicicletasP";
 import ContatoP from "./Pages/ContatoP";
 import HomeP from "./Pages/HomeP";
 import SegurosP from "./Pages/SegurosP";
 import CondiçõesP from "./Pages/CondiçõesP";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "../Utils/scrollToTop";
 
 function App(props) {
   return (
