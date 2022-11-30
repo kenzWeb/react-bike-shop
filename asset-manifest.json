@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-bike-shop/static/css/main.3bca8a66.css",
-    "main.js": "/react-bike-shop/static/js/main.72054b4f.js",
+    "main.js": "/react-bike-shop/static/js/main.adc19cec.js",
     "static/media/horario.svg": "/react-bike-shop/static/media/horario.46b73d955a0cece8bebf.svg",
     "index.html": "/react-bike-shop/index.html",
     "static/media/arrow.svg": "/react-bike-shop/static/media/arrow.234192a78afef2709b85.svg",
     "static/media/block.svg": "/react-bike-shop/static/media/block.163c8ba998e1f7101091.svg",
     "main.3bca8a66.css.map": "/react-bike-shop/static/css/main.3bca8a66.css.map",
-    "main.72054b4f.js.map": "/react-bike-shop/static/js/main.72054b4f.js.map"
+    "main.adc19cec.js.map": "/react-bike-shop/static/js/main.adc19cec.js.map"
   },
   "entrypoints": [
     "static/css/main.3bca8a66.css",
-    "static/js/main.72054b4f.js"
+    "static/js/main.adc19cec.js"
   ]
 }
